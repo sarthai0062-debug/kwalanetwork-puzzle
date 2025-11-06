@@ -1,14 +1,21 @@
-# Slide Bounty Quest
+# 🎮 Slide Bounty Quest
 
-A blockchain-based sliding puzzle game on Polygon Amoy testnet. Solve puzzles, complete milestones, and earn POL rewards!
+> Solve puzzles, earn crypto—a skill-based Web3 game on Polygon where every puzzle solved unlocks real rewards.
 
-## 🎮 Features
+**[🎯 Play Now](https://kwalanetwork-puzzle.vercel.app/)** | **[📖 Game Mechanics](GAME_MECHANICS.md)** | **[⚡ Kwala Workflow](KWALA_WORKFLOW.md)**
 
-- **7 Progressive Levels**: Increasing difficulty from 3x3 to 5x5 grids
-- **Milestone Rewards**: Claim POL at levels 1, 3, 5, and 7
-- **On-Chain Progress**: All puzzle completions recorded on Polygon Amoy
-- **Wallet Integration**: Connect MetaMask to play and claim rewards
-- **Contract Funding**: Fund the contract directly from the UI
+---
+
+## ✨ Features
+
+- 🧩 **7 Progressive Levels** - Increasing difficulty from 3×3 to 5×5 grids
+- 💰 **Automated Rewards** - POL rewards automatically delivered via Kwala
+- 🎯 **Milestone System** - Claim rewards at levels 1, 3, 5, and 7
+- 🔗 **On-Chain Progress** - All completions recorded on Polygon Amoy
+- 🦊 **MetaMask Integration** - Seamless wallet connection
+- ⚡ **Zero-Friction Claims** - No manual claiming needed (Kwala handles it!)
+
+---
 
 ## 🚀 Quick Start
 
@@ -16,7 +23,7 @@ A blockchain-based sliding puzzle game on Polygon Amoy testnet. Solve puzzles, c
 
 - Node.js 18+ and npm
 - MetaMask wallet
-- Polygon Amoy testnet POL (get from [faucet](https://faucet.polygon.technology/))
+- Polygon Amoy testnet POL ([Get from faucet](https://faucet.polygon.technology/))
 
 ### Installation
 
@@ -32,61 +39,102 @@ npm install
 npm run dev
 ```
 
+Visit `http://localhost:8080` to play locally.
+
+---
+
+## 🎯 How to Play
+
+1. **Connect Wallet** - Connect your MetaMask wallet
+2. **Switch Network** - Ensure you're on Polygon Amoy testnet
+3. **Solve Puzzles** - Complete 7 progressively difficult sliding puzzles
+4. **Earn Rewards** - Receive POL automatically at milestones (1, 3, 5, 7)
+
+**That's it!** Kwala automatically handles reward distribution—no manual claiming required.
+
+---
+
 ## 🛠️ Tech Stack
 
-- **Vite** - Build tool
-- **React** + **TypeScript** - Frontend framework
-- **Ethers.js** - Blockchain interactions
-- **shadcn/ui** - UI components
-- **Tailwind CSS** - Styling
-- **Polygon Amoy** - Testnet blockchain
+- **Frontend**: React + TypeScript + Vite
+- **UI**: shadcn/ui + Tailwind CSS
+- **Blockchain**: Ethers.js v6
+- **Network**: Polygon Amoy Testnet
+- **Automation**: Kwala Workflow Editor
+- **Deployment**: Vercel
 
-## 📦 Build
+---
+
+## 📦 Build & Deploy
 
 ```bash
 # Production build
 npm run build
 
-# Preview production build
+# Preview build
 npm run preview
 ```
-
-## 🌐 Deployment
 
 ### Deploy to Vercel
 
 1. Push your code to GitHub
-2. Import your repository in [Vercel](https://vercel.com)
-3. Vercel will auto-detect the Vite configuration
-4. Deploy!
+2. Import repository in [Vercel](https://vercel.com)
+3. Deploy! (Auto-detects Vite configuration)
 
-The `vercel.json` file is already configured for optimal deployment.
-
-### Deploy to GitHub Pages
-
-```bash
-# Build the project
-npm run build
-
-# Deploy (requires gh-pages package)
-npm install -g gh-pages
-gh-pages -d dist
-```
+---
 
 ## 📝 Contract Details
 
-- **Network**: Polygon Amoy Testnet (Chain ID: 80002)
-- **Contract Address**: `0xc6D3bBA40408ad9a706FdE69716C1adbDB7aeA75`
+- **Network**: Polygon Amoy Testnet
+- **Chain ID**: `80002`
+- **Contract**: `0xc6D3bBA40408ad9a706FdE69716C1adbDB7aeA75`
 - **Explorer**: [View on PolygonScan](https://amoy.polygonscan.com/address/0xc6D3bBA40408ad9a706FdE69716C1adbDB7aeA75)
 
-## 🎯 How to Play
+---
 
-1. Connect your MetaMask wallet
-2. Ensure you're on Polygon Amoy testnet
-3. Solve sliding puzzles to progress through 7 levels
-4. Complete milestones at levels 1, 3, 5, and 7
-5. Claim your POL rewards!
+## 📚 Documentation
+
+- **[Game Mechanics](GAME_MECHANICS.md)** - How the game works and smart contract integration
+- **[Kwala Workflow](KWALA_WORKFLOW.md)** - Automated reward payout system
+
+---
+
+## 🎨 Project Structure
+
+```
+├── src/
+│   ├── components/      # React components
+│   │   ├── SlidePuzzle.tsx    # Puzzle game logic
+│   │   ├── GameProgress.tsx   # Progress tracking
+│   │   └── WalletConnect.tsx  # Wallet integration
+│   ├── lib/
+│   │   └── contract.ts        # Smart contract interactions
+│   └── pages/
+│       └── Index.tsx           # Main game page
+├── vercel.json          # Vercel deployment config
+└── README.md
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions welcome! Feel free to open issues or submit pull requests.
+
+---
 
 ## 📄 License
 
 MIT
+
+---
+
+## 🔗 Links
+
+- **Live Game**: [kwalanetwork-puzzle.vercel.app](https://kwalanetwork-puzzle.vercel.app/)
+- **Polygon Amoy Faucet**: [faucet.polygon.technology](https://faucet.polygon.technology/)
+- **Contract Explorer**: [amoy.polygonscan.com](https://amoy.polygonscan.com/address/0xc6D3bBA40408ad9a706FdE69716C1adbDB7aeA75)
+
+---
+
+**Built with ❤️ using Kwala Workflow Editor for automated rewards**
